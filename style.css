@@ -1,0 +1,70 @@
+/*------GENERAL------*/
+
+* {
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;;
+}
+
+.body {
+    margin: 0;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+/*------HEADER------*/
+.header {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    overflow: auto;
+}
+
+.header-start {
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: rgb(58, 4, 109);
+}
+
+.button-start {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:none;
+    border: 2px solid white;
+    outline: none;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: color 0.8s ease-out;
+    overflow: hidden;
+}
+
+.button-start:hover {
+    color: black;
+}
+
+.button-start:before {
+    content: "";
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: #ffffff;
+    transition: top 0.8s ease-in-out;
+    z-index: -1;
+}
+
+.button-start:hover:before {
+    transition: 0.8 ease-in-out;
+    top: 0;
+}
+
+
+
