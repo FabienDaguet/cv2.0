@@ -8,10 +8,12 @@
 .body {
     margin: 0;
     font-size: 1rem;
-    overflow: hidden;
+   /* overflow: hidden;*/
+    background-color: black;
 }
 
 /*------HEADER------*/
+
 .header {
     min-width: 100%;
     min-height: 100%;
@@ -65,6 +67,65 @@
     transition: 0.8 ease-in-out;
     top: 0;
 }
+
+
+/*------My Page------*/
+
+
+/*----intro----*/
+
+.intro {
+    min-height: 100vh;
+    min-width: 100vh;
+    background-color: brown;
+    position: relative;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    color: blanchedalmond;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.slide {
+    margin: 2rem 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px blanchedalmond;
+}
+
+.contact {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.contact-list::before {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 0.25rem;
+    margin-left: -1.5rem;
+    background-color: blanchedalmond;
+}
+
 
 
 
