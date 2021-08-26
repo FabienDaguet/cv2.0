@@ -71,6 +71,15 @@
 
 /*------My Page------*/
 
+.article-container {
+    position: relative;
+    min-width: 100vh;
+    min-height: 100vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*----intro----*/
 
@@ -126,6 +135,25 @@
     background-color: blanchedalmond;
 }
 
+/*----profil----*/
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-80%, 0);
+    padding-top: 6rem;
+}
+
+.card-head {
+    margin: 0 auto;
+}
+
+.card-title {
+    color: blanchedalmond;
+    text-transform: uppercase;
+    text-align: left;
+}
 
 
 
