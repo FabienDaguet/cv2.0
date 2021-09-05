@@ -168,6 +168,10 @@
     margin: 0 -1rem;
 }
 
+.element {
+    padding: 0 1rem;
+}
+
 /*--about--*/
 
 .about-container {
@@ -176,13 +180,16 @@
     justify-content: center;
 }
 
-.about-element {
-    padding: 0 1rem;
-}
-
 .about-img {
     border: 1px solid blanchedalmond;
     padding: 1rem;
+}
+
+/*--path--*/
+
+.path {
+    border: 1px solid blanchedalmond;
+    padding: 0 1rem;
 }
 
 
