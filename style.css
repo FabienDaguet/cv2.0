@@ -139,6 +139,7 @@
 
 
 .card {
+    position: relative;
     padding-top: 6rem;
     width: 100%;
 }
@@ -192,5 +193,11 @@
     padding: 0 1rem;
 }
 
+.path-more {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
