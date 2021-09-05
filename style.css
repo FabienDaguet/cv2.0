@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family:'Open Sans', sans-serif;;
+    color: blanchedalmond;
 }
 
 .body {
@@ -14,14 +15,14 @@
 
 /*------HEADER------*/
 
-.header {
+.home {
     min-width: 100%;
     min-height: 100%;
     background-color: black;
     overflow: auto;
 }
 
-.header-start {
+.home-start {
     min-width: 100vh;
     min-height: 100vh;
     background-color: rgb(58, 4, 109);
@@ -69,35 +70,26 @@
 }
 
 
-/*------My Page------*/
-
-.article-container {
-    position: relative;
-    min-width: 100vh;
-    min-height: 100vh;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*------MY PAGE------*/
 
 
-/*----intro----*/
 
-.intro {
+
+/*----Intro----*/
+
+.header {
     min-height: 100vh;
     min-width: 100vh;
     background-color: brown;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.description {
-    display: flex;
-    flex-direction: column;
-    color: blanchedalmond;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -50%);
+.header-content {
+    display: block;
+    text-align: left;
+    width: 100%;
 }
 
 .name {
@@ -135,24 +127,62 @@
     background-color: blanchedalmond;
 }
 
-/*----profil----*/
-
-.card {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-80%, 0);
-    padding-top: 6rem;
+.subject {
+    margin-bottom: 0.75rem ;
 }
 
-.card-head {
-    margin: 0 auto;
+.subject-icon {
+    margin-right: 0.25rem;
+}
+
+/*----Profil----*/
+
+
+.card {
+    padding-top: 6rem;
+    width: 100%;
 }
 
 .card-title {
-    color: blanchedalmond;
     text-transform: uppercase;
-    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.element-container {
+    width: 100%;
+} 
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.row {
+    display: flex;
+    margin: 0 -1rem;
+}
+
+/*--about--*/
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-element {
+    padding: 0 1rem;
+}
+
+.about-img {
+    border: 1px solid blanchedalmond;
+    padding: 1rem;
 }
 
 
