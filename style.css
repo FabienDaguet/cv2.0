@@ -1,8 +1,9 @@
 /*------GENERAL------*/
 
 :root {
-    --theme: rgb(218, 186, 5);
-    --backgroung: hsl(0, 0%, 0%);
+    --theme: rgb(170, 169, 165);
+    --backgroung: hsl(0, 0%, 18%);
+    --sub-title: hsl(0, 100%, 100%);
 }
 
 * {
@@ -14,7 +15,6 @@
 .body {
     margin: 0;
     font-size: 1rem;
-   /* overflow: hidden;*/
     background-color: var(--backgroung);
     margin-bottom: 10rem;
 }
@@ -26,10 +26,12 @@ ul {
 /*------HEADER------*/
 
 .home {
+    /*position: fixed;*/
     min-width: 100%;
     min-height: 100%;
     background-color: var(--backgroung);
-    overflow: auto;
+    z-index: 2;
+    overflow: hidden;
 }
 
 .home-start {
@@ -77,6 +79,15 @@ ul {
 .button-start:hover:before {
     transition: 0.8 ease-in-out;
     top: 0;
+}
+
+.layout {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    background: var(--theme);
 }
 
 

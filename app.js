@@ -1,15 +1,14 @@
 "use strict";
 
+let body = document.querySelector(".body");
+let homePage = document.querySelector(".home");
 let start = document.querySelector(".start-js");
-let myPage = document.getElementById("mypage-js");
+let layout = document.querySelector(".layout-js");
+let myPage = document.querySelector("#head-js");
 
-function welcome() {
-let target = myPage;
-target.scrollIntoView({
-    behavior: "smooth"
-});
+function welcome(e) {
+    e.preventDefault(e);
 
- console.log("test");
 }
 
 start.addEventListener("click", welcome);
