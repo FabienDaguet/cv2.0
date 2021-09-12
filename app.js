@@ -8,8 +8,12 @@ let myPage = document.querySelector("#head-js");
 let comp = document.querySelector(".comp-js");
 const progress = document.querySelectorAll(".progress-js");
 
-function welcome(e) {
+function translate(e) {
     e.preventDefault(e);
+
+    homePage.classList.add("home-js");
+
+    console.log("test");
 
 }
 
@@ -25,7 +29,7 @@ function scrollAnimation() {
 }
 
 
+start.addEventListener("click", translate);
 
 window.addEventListener("scroll", scrollAnimation); 
 
-start.addEventListener("click", welcome);
