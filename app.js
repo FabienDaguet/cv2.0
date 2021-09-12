@@ -3,19 +3,35 @@
 let body = document.querySelector(".body");
 let homePage = document.querySelector(".home");
 let start = document.querySelector(".start-js");
-let layout = document.querySelector(".layout-js");
-let myPage = document.querySelector("#head-js");
+let layout = document.querySelector(".layout");
 let comp = document.querySelector(".comp-js");
+//let head = document.querySelector(".header");
+//let welcomeContainer = document.querySelector(".welcome");
+//let welcomeTitle = document.querySelector(".welcome-title");
 const progress = document.querySelectorAll(".progress-js");
+const scrollRestoration = history.scrollRestoration;
 
-function translate(e) {
-    e.preventDefault(e);
 
-    homePage.classList.add("home-js");
 
-    console.log("test");
-
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
 }
+
+function translate() {
+
+    homePage.classList.add("translate-js");
+
+    setTimeout(function(){
+        layout.classList.add("translate-js");
+    },400);
+
+//    welcomeLayout();
+}
+
 
 function scrollAnimation() {
 
@@ -28,8 +44,13 @@ function scrollAnimation() {
     }
 }
 
+/*
+function welcomeLayout() {
+    setTimeout(function(){
+         welcomeTitle.classList.add("opacity-js");
+    },2000);
+}
+*/
 
 start.addEventListener("click", translate);
-
-window.addEventListener("scroll", scrollAnimation); 
-
+window.addEventListener("scroll", scrollAnimation);
